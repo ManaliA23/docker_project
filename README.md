@@ -8,8 +8,8 @@ Otherwise the images can also be pulled from https://hub.docker.com/
 ## STEPS TO BUILD THIS PROJECT
 1. Created a file docker-compose.yml and edit it using vim text editor `vim docker-compose.yml`
 2. code to be written in docker-compose.yml file is given on docker-compose.yml as well as in the screenshots below
-![screenshot](https://https://github.com/ManaliA23/docker_project/blob/master/1.jpg?raw=true)
-![screenshot](https://https://github.com/ManaliA23/docker_project/blob/master/2.jpg?raw=true)
+![screenshot](1.jpg?raw=true)
+![screenshot](2.jpg?raw=true)
 
 
 
