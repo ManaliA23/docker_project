@@ -20,19 +20,19 @@ Webapp **drupal** can be seen by using local system IP
 ![screenshot](6.jpg?raw=true)
 
 ## DETAILED EXPLANATION OF docker-compose.yml file
-**version:**
+* **version:**
 In each version the style and syntax are different. I used version 3.
-**services:**
+* **services:**
 In docker compose we use the term services to rectify which things will run when we start the compose file.
-**container name:**
+* **container name:**
 Docker-compose automatically creates the name for the containers using our defined container name. We just only have to tell that these containers we are using.
-**image and restart:**
+* **image and restart:**
 image and restart these two key is used to specify which image we want to use and due to any reason if any of the container stops docker-compose will again restart it.
-**volumes:**
+* **volumes:**
 In docker as soon as we terminate an container our whole data inside that container destroyed. But if we want to make our data permanent then we have to use docker volume. Using the last volumes key we at first created two volumes. We know that MySQL and Drupal stores their data inside which folder. We simply make those folders permanent by mounting these volumes. That means due to any reason if our container terminated our data will not loose.
-**environment:**
+* **environment:**
 There are many images in Docker which needs some pre-defined environment variables to run. That's why we need to pass these variables. 
-**depends_on and ports:**
+* **depends_on and ports:**
 As we know Drupal needs MySQL database server to store there files that's why we are using depends_on. Also we know that we have to expose our container(where drupal running) to a specific port otherwise from outside world we will not be able to access our WebApp.
 
 
